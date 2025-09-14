@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <title>Eat Healthy, Live Healthy</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Healthy Living Guide</h1>
+        <p>Your simple guide to eating well, staying active, and staying healthy.</p>
+    </header>
+
+    <main>
+
+        <!-- Example List -->
+        <section>
+            <h2>Top 3 Healthy Habits</h2>
+            <ol>
+                <li>Eat more fruits and vegetables</li>
+                <li>Exercise for at least 30 minutes a day</li>
+                <li>Drink plenty of water</li>
+            </ol>
+        </section>
+
+        <!-- Example Table -->
+        <section>
+            <h2>Daily Nutrition Table</h2>
+            <table>
+                <caption>Recommended Daily Intake</caption>
+                <thead>
+                    <tr>
+                        <th>Food Group</th>
+                        <th>Serving Size</th>
+                        <th>Examples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fruits</td>
+                        <td>2 servings</td>
+                        <td>Apples, Bananas, Berries</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>3 servings</td>
+                        <td>Spinach, Carrots, Broccoli</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>2 servings</td>
+                        <td>Beans, Eggs, Chicken</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Example Media -->
+        <section>
+            <h2>Quick Motivation</h2>
+            <p>Watch this short video about healthy living:</p>
+            <video controls width="320" autoplay loop muted>
+                <source src="healthy_living.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Complete HTML5 Form -->
+        <section>
+            <h2>Sign Up for Healthy Living Tips</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Min 6 characters" required minlength="6">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <label>
+                        <input type="checkbox" name="updates" checked>
+                        Send me weekly health tips
+                    </label>
+
+                    <label for="goal">Your Health Goal:</label>
+                    <select id="goal" name="goal" required>
+                        <option value="">--Select a Goal--</option>
+                        <option value="weight-loss">Lose Weight</option>
+                        <option value="fitness">Get Fitter</option>
+                        <option value="nutrition">Eat Better</option>
+                    </select>
+
+                    <p>Preferred Contact Method:</p>
+                    <label><input type="radio" name="contact" value="email" required>Email</label>
+                    <label><input type="radio" name="contact" value="phone">Phone</label>
+                    <label><input type="radio" name="contact" value="none">None</label>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Healthy Living Guide</p>
+    </footer>
+
+</body>
+</html>
